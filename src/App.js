@@ -16,7 +16,6 @@ import './App.css';
 
 function App() {
   return (
-    <BrowserRouter>
       <Switch>
         <Route exact path = "/" component = {Home} />
         <Route exact path = "/books" component = {BookList} />
@@ -26,7 +25,6 @@ function App() {
         <Route exact path = "/not-found" component = {NotFound} />
         <Redirect to = "/not-found" />
       </Switch>
-    </BrowserRouter>
   );
 }
 
